@@ -40,12 +40,19 @@
     />
 
     <!-- your own stylesheet -->
-    <link rel="preload" href="css/style.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+
+    <div class="container">
+        <ul class="skip-links">
+          <li><a href="#nav">Skip to main nav</a></li>
+          <li><a href="#main">Skip to main content</a></li>
+        </ul>
+    </div>
+
 <!-- Header -->
-<header>
+<header role="banner"></header>
     <div class="container-header">
         <div class="logo">
             <a href="index.html">
@@ -70,13 +77,13 @@
 
     <!-- Navigation Bar -->
     <div class="container-nav">
-        <nav class="nav-main">
+        <nav class="nav-main" role="navigation">
             <ul>
-                <li><a href="">us</a></li>
+                <li><a href="us.html">us</a></li>
                 <li><a href="">menu</a></li>
                 <li><a href="">healthy</a></li>
                 <li><a href="">gifts</a></li>
-                <li><a href="">events</a></li>
+                <li><a href="events.html">events</a></li>
                 <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
@@ -86,7 +93,7 @@
 <!-- End Header -->
 
 <!-- Main container -->
-<div class="main-container">
+<div class="main-container" role="main">
     <div class="banner-grid">
         <div class="main">
             <div class="box-welcome">
@@ -102,7 +109,7 @@
             </div>
         </div>
 
-        <div class="side">
+        <div class="side" role="complementary">
             <div class="side-wrapper">
                 <div class="time">
                     <p>DON'T HAVE TIME?</p>
@@ -115,12 +122,12 @@
             </div>
         </div>
     </div>
-    <div class="products-grid">
+    <div class="products-grid" role="complementary">
         <ul class="products">
             <li class="product_item">
                 <div class="product">
                     <div class="product_image">
-                        <img src="img/cake1-01.png" alt="cake1" class="image"/>
+                        <img class="image" src="img/cake1-01.png" alt="picture of a cake1"/>
                     </div>
                     <h2 class="product_title">Passion Cake</h2>
                 </div>
@@ -128,7 +135,7 @@
             <li class="product_item">
                 <div class="product">
                     <div class="product_image">
-                        <img src="img/cake2-01.png" alt="cake2" class="image"/>
+                        <img class="image" src="img/cake2-01.png" alt="picture of a cake2"/>
                     </div>
                     <h2 class="product_title">Mini Bread</h2>
                 </div>
@@ -136,7 +143,7 @@
             <li class="product_item">
                 <div class="product">
                     <div class="product_image">
-                        <img src="img/cake3-01.png" alt="cake3" class="image"/>
+                        <img class="image" src="img/cake3-01.png" alt="picture of a cake3"/>
                     </div>
                     <h2 class="product_title">Cinammon Roll</h2>
                 </div>
@@ -144,7 +151,7 @@
             <li class="product_item">
                 <div class="product">
                     <div class="product_image">
-                        <img src="img/cake4-01.png" alt="cake4" class="image"/>
+                        <img class="image" src="img/cake4-01.png" alt="picture of a cake4"/>
                     </div>
                     <h2 class="product_title">Babka</h2>
                 </div>
@@ -152,7 +159,7 @@
             <li class="product_item">
                 <div class="product">
                     <div class="product_image">
-                        <img src="img/cake5-01.png" alt="cake5" class="image"/>
+                        <img class="image" src="img/cake5-01.png" alt="picture of a cake5"/>
                     </div>
                     <h2 class="product_title">Cake Cup</h2>
                 </div>
@@ -160,7 +167,7 @@
             <li class="product_item">
                 <div class="product">
                     <div class="product_image">
-                        <img src="img/cake6-01.png" alt="cake6" class="image"/>
+                        <img class="image" src="img/cake6-01.png" alt="picture of a cake6"/>
                     </div>
                     <h2 class="product_title">Bread Roll</h2>
                 </div>
@@ -175,7 +182,7 @@
             in every order
         </div>
         <div class="center">
-            <img src="img/YUM CAKE-01.png" alt="YumyCake" class="image"/>
+            <img class="image" src="img/YUM CAKE-01.png" alt="YumyCake"/>
         </div>
         <div>
             <div class="right">
@@ -192,7 +199,7 @@
 </div>
 <!-- End main container -->
 
-<footer>
+<footer role="contentinfo">
     <ul class="social-icons">
         <li class="icon-item">
             <img src="img/facebook-01.png" alt="facebook-01" class="image"/>
