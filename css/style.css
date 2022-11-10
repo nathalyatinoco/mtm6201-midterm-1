@@ -61,6 +61,27 @@ h2 {
   border-radius: 25px;
 }
 
+.skip-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skip-links a{
+  position: absolute;
+  top: -3em;
+  background-color: black;
+  color:white;
+  padding: .5em 1em;
+  font-weight: bold;
+}
+
+.skip-links a:focus{
+  top: 0;
+}
+
+a:focus{
+  outline: 4px solid palevioletred;
+}
 .container-nav {
   background: #142443;
 }
@@ -74,6 +95,10 @@ nav ul li {
   display: inline-block;
   width: 16%;
   text-align: center;
+}
+
+nav ul li a:hover{
+  text-decoration: underline;
 }
 
 .container-nav .nav-main ul {
@@ -356,10 +381,76 @@ form button {
   text-transform: uppercase;
 }
 
-.contact-section{
+.contact-section {
   padding: 45px 30px;
 }
 
+
+.owner {
+  padding: 45px 30px;
+}
+
+
+/* us page */
+
+.baker-container{
+  background-color: #fadbce;
+  width: 100%;
+  padding: 50px;
+  margin: auto;
+  text-align: left;
+  font-size: 20px;
+}
+
+.baker-container img{
+  float: left;
+  padding: 10px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.owner-wrapper{
+  background-color: #b3b98d;
+  width: 100%;
+  padding: 50px;
+  margin: auto;
+  text-align: left;
+  font-size: 20px;
+}
+
+.button-order-recipes{
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button-order-recipes a {
+  background-color: #142443;
+  color: #c49a6c;
+  font-size: 25px;
+  border: none;
+  width: auto;
+  height: 60px;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 16px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* events page */
+
+.events-grid-container{
+  background-color: #fadbce;
+  width: 100%;
+  padding: 50px;
+  margin: auto;
+  font-size: 20px;
+}
 
 /* Responsive rules */
 
